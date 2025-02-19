@@ -7,7 +7,7 @@ public class Coffee : MonoBehaviour
 
     [SerializeField] float talkDistance = 2;
     bool inConversation;
-    public string[] finalD = {"Congrats you have collected all the ingredients, enjoy the coffee!"};
+    public string[] finalD = {"Congrats you have collected all the ingredients, go back to the wizard!"};
 
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -52,7 +52,6 @@ public class Coffee : MonoBehaviour
                         GameManager.Instance.kettle = true;
                     }
                     if (GameManager.Instance.coffee && GameManager.Instance.chocolate && GameManager.Instance.milk && GameManager.Instance.kettle){
-                        Debug.Log("The final talk");
                         GameManager.Instance.StartDialogue(finalD, 0, "The Game");
                     }else{
                         GameManager.Instance.StartDialogue(npc.dialogueAsset.dialogue, npc.StartPosition, npc.npcName);

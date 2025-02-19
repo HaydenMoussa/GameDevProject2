@@ -4,6 +4,7 @@ public class PlayerConvo : MonoBehaviour
 {
     [SerializeField] float talkDistance = 2;
     bool inConversation;
+    public string[] finalD = {"Wow that was fast, thank you for your work! I'm going to enjoy this!"};
 
     void Update()
     {
@@ -15,23 +16,24 @@ public class PlayerConvo : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("Interact");
         if (inConversation)
         {
-            Debug.Log("Skipping Line");
             GameManager.Instance.SkipLine();
         }
         else
         {
-            Debug.Log("Looking for NPC");
             RaycastHit2D hit = Physics2D.CircleCast(transform.position, talkDistance, Vector2.up, 0, LayerMask.GetMask("NPC"));
             if (hit)
             {
-                Debug.Log("Hit Something!!" + hit.collider.gameObject.name);
 
                 if (hit.collider.gameObject.TryGetComponent(out NPC npc))
                 {
-                    GameManager.Instance.StartDialogue(npc.dialogueAsset.dialogue, npc.StartPosition, npc.npcName);
+                    if (GameManager.Instance.coffee && GameManager.Instance.chocolate && GameManager.Instance.milk && GameManager.Instance.kettle && npc.npcName == "The Wizard"){
+                        GameManager.Instance.StartDialogue(finalD, 0, "The Wizard");
+                    } else{
+                        GameManager.Instance.StartDialogue(npc.dialogueAsset.dialogue, npc.StartPosition, npc.npcName);
+                    }
+                    
                 }
             }
         }
