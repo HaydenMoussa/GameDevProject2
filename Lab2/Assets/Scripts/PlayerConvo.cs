@@ -28,7 +28,7 @@ public class PlayerConvo : MonoBehaviour
 
                 if (hit.collider.gameObject.TryGetComponent(out NPC npc))
                 {
-                    if (GameManager.Instance.coffee && GameManager.Instance.chocolate && GameManager.Instance.milk && GameManager.Instance.kettle && npc.npcName == "The Wizard"){
+                    if (GameManager.Instance.coffee && GameManager.Instance.sugar && GameManager.Instance.milk && GameManager.Instance.water && npc.npcName == "The Wizard"){
                         GameManager.Instance.StartDialogue(finalD, 0, "The Wizard");
                     } else{
                         GameManager.Instance.StartDialogue(npc.dialogueAsset.dialogue, npc.StartPosition, npc.npcName);

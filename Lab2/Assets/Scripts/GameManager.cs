@@ -6,9 +6,9 @@ using System;
 public class GameManager : MonoBehaviour
 {
     public bool milk = false;
-    public bool chocolate = false;
+    public bool sugar = false;
     public bool coffee = false;
-    public bool kettle = false;
+    public bool water = false;
     void Awake()
         {
             if (Instance == null)

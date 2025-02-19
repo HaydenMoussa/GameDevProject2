@@ -43,15 +43,15 @@ public class Coffee : MonoBehaviour
                     if (npc.npcName == "Coffee Mix"){
                         
                         GameManager.Instance.coffee = true;
-                    }else if (npc.npcName == "Chocolate"){
+                    }else if (npc.npcName == "Sugar"){
                         
-                        GameManager.Instance.chocolate = true;
+                        GameManager.Instance.sugar = true;
                     }else if (npc.npcName == "Milk"){
                         GameManager.Instance.milk = true;
-                    }else if (npc.npcName == "Kettle"){
-                        GameManager.Instance.kettle = true;
+                    }else if (npc.npcName == "Water"){
+                        GameManager.Instance.water = true;
                     }
-                    if (GameManager.Instance.coffee && GameManager.Instance.chocolate && GameManager.Instance.milk && GameManager.Instance.kettle){
+                    if (GameManager.Instance.coffee && GameManager.Instance.sugar && GameManager.Instance.milk && GameManager.Instance.water){
                         GameManager.Instance.StartDialogue(finalD, 0, "The Game");
                     }else{
                         GameManager.Instance.StartDialogue(npc.dialogueAsset.dialogue, npc.StartPosition, npc.npcName);

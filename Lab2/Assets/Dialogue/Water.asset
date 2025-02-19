@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8aba3688b4cfae6469da9aeb259f7468, type: 3}
-  m_Name: Chocolate
+  m_Name: Water
   m_EditorClassIdentifier: 
   dialogue:
-  - You've gained chocolate!
+  - You got water!
