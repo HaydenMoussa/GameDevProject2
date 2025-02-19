@@ -31,10 +31,6 @@ public class PlayerConvo : MonoBehaviour
 
                 if (hit.collider.gameObject.TryGetComponent(out NPC npc))
                 {
-                    Debug.Log("npc name " + npc.npcName);
-                    Debug.Log("npc dialgoue " + npc.dialogueAsset.dialogue);
-                    Debug.Log("npc startpos " + npc.StartPosition);
-
                     GameManager.Instance.StartDialogue(npc.dialogueAsset.dialogue, npc.StartPosition, npc.npcName);
                 }
             }

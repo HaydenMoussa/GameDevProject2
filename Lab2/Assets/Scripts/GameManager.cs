@@ -5,6 +5,10 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
+    public bool milk = false;
+    public bool chocolate = false;
+    public bool coffee = false;
+    public bool kettle = false;
     void Awake()
         {
             if (Instance == null)
