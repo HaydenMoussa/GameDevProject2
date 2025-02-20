@@ -1,6 +1,6 @@
 # GameDevProject2
 
-This game is titled "Maze Brew." [If you want to change the name, do so. Otherwise, delete this part.]
+This game is titled "Maze Brew." 
 
 The intent of this game is to allow players an experience to explore a maze that has 4 different ends.
 
@@ -24,16 +24,16 @@ Haydens's Joys and Struggles -
 
 Joys:
 
-[...]
+While making this game, I used the dialogue technique that Dr. Goadrich showed us in class, which differed from other ways I had implemented dialogue in the past. It was cool to see how different implementations can give the same results and their respective strengths and weaknesses.
 
 Struggles:
 
-[...]
+While implementing the dialogue, I had issues with global variables to check if players had talked to certain NPCs and picked up certain items. Figuring out the issue was a struggle, but once it was solved, it felt good to have a new implementation of dialogue.
 
 Assets:
-- Base game art(Tilemap and Characters): [Please put in this link]
+- Base game art(Tilemap and Characters): (https://kenney.nl/assets/tiny-dungeon)
 - Coffee ingredients art: https://ghostpixxells.itch.io/pixel-mart
-- Background music: [Please put in this link]
+- Background music: https://assetstore.unity.com/packages/audio/music/8bit-music-062022-225623
 - Font: https://www.fontspace.com/pixelletters-font-f22954
 
 Fin's contributions:
@@ -42,4 +42,4 @@ I figured out the ingredients that would be what the player was seeking, which i
 
 Hayden's contributions:
 
-[...]
+I created the repo, set up the player, all the scripts, set up the tile map, set up all the components for the ingredients, set up the camera to follow the player, set up different dialogue options for when the player has gained all the ingredients, the background music, and uploaded to itch.
